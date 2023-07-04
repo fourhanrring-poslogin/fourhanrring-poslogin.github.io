@@ -1,25 +1,80 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="main.css">
+	<title>Fourhanrring</title>
+	<style>
+		body {
+			background-color: black;
+		}
+		h1 {
+			color: red;
+		}
+		p {
+			color: red;
+		}
+	</style>
 </head>
 <body>
-    <div class="page">
-        <form method="POST" class="formLogin">
-            <h1>Login</h1>
-            <p>Digite os seus dados de acesso no campo abaixo.</p>
-            <label for="email">E-mail</label>
-            <input type="email" placeholder="Digite seu e-mail" autofocus="true" />
-            <label for="password">Senha</label>
-            <input type="password" placeholder="Digite seu e-mail" />
-            <a href="/">Esqueci minha senha</a>
-            <input type="submit" value="Acessar" class="btn" />
-        </form>
-    </div>
-    
+	<div class="box-parent-login">
+		<div class="well bg-white box-login">
+			<h1 class="ls-login-logo">Fourhanrring Berstrafer Painel</h1>
+	
+			<form role="form">
+				<fieldset>
+					<script>
+					
+						function autenticar() {
+							var username = document.getElementById("username").value;
+							var password = document.getElementById("password").value;				
+										// Verificar as informações de login
+							if (username === "RaeskDeveloperAccount" && password === "88385097") {
+								alert("Login bem-sucedido!");
+								window.location.href = "https://www.google.com"; 
+								// Redirecionar para a página do Google
+							} else {
+								alert("Nome de usuário ou senha incorretos!");
+							}
+						}
+					</script>
+
+					<h1>Autenticação de Usuário</h1>
+
+					<form>
+						<p><label for="username">Nome de usuário:</label></p>
+						<input type="text" id="username" required>
+
+						<p><label for="password">Senha:</label></p>
+						<input type="password" id="password" required>
+
+						<input type="button" value="Entrar" onclick="autenticar()">
+					</form>
+
+					<p class="txt-center ls-login-signup">Não possui um usuário na Rousier.net? Contate o dono e compre seu login!
+						<body>
+    <a href="https://wa.me/5541988883334" target="_blank">Entre em contato com o dono!</a>
+</body>
+					</p>
+
+					<p class="txt-cenfer ls-login-signup">Painel has been created by Raesk.</p>
+
+					<fieldset></fieldset>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+
+	<p class="txt-cenfer ls-login-signup">What is the "Fourhanrring Painel"?. This is a tool for the ban WhatsApp numbers. Well, I (Raesk, Fourhanrring creator), recommend you don't use this "painel". If you will use, have responsibility. I do not take responsibility if you use it irresponsibly.</p>
+	<body>
+		<p
+				class="txt-cenfer ls-login-signup">In error case, contact the developer:
+    <a href="https://wa.me/5541988883334" target="_blank">Contact of painel Developer </a>
+</body>
+</p>
+
+	<h1 class="ls-login-logo">Credits From:</h1>
+	<p class="txt-cenfer ls-login-signup">Developer - Raesk</p>
+	<p class="txt-cenfer ls-login-signup">Programmer - Raesk</p>
+	<p class="txt-cenfer ls-login-signup">Helper - Snape</p>
+
 </body>
 </html>
